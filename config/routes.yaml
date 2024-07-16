@@ -1,0 +1,13 @@
+# config/routes.yaml
+
+# Chargement des contrôleurs depuis le répertoire src/Controller/
+controllers:
+  resource: '../src/Controller/'
+  type: attribute
+  prefix: ''  # Optionnel : préfixe pour toutes les routes des contrôleurs
+
+# Exemple de route pour DewiController
+app_dewi_index:
+  path: /dewi
+  controller: 'App\Controller\DewiController::index'
+  methods: GET
